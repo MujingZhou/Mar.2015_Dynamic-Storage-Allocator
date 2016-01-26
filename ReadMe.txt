@@ -6,7 +6,7 @@ In this project, I implemented my own malloc, free, realloc, and calloc function
 
 Detailed introductions:
 /*
- * Dynamic Storage allocator based on implicit free
+ * Dynamic Storage allocator based on segregated
  * lists, first fit placement, and boundary tag coalescing, as described
  * in the CS:APP2e text. Blocks must be aligned to doubleword (8 byte)
  * boundaries. Minimum block size is 16 bytes.
@@ -15,7 +15,7 @@ Detailed introductions:
  * Andrew ID: mujingz
  * Version 3.0
  * 
- * Overview:
+ * Overview & Features:
  * 1. Segregated free list of size LIST_NUM = 24.
  * 2. First-fit strategy for searching the free blocks.
  * 3. LIFO strategy for insertion into free list
